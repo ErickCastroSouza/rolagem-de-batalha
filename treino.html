@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha virtual</title>
+    <link rel="stylesheet" href="treino.css">
+</head>
+<body>
+    <header>
+    <h1>Rolagem de batalha</h1>
+    </header>
+    <section>
+    <h1>Ficha virtual</h1>
+    <div>
+    <p>Digite seu nível de perícia (1 a 20):</p>
+    <input type="number" name="pericia" id="pericia">
+    <input type="button" value="confirmar" id="confirmar" onclick="toList()">
+    <button id="limpar" name="limpar" onclick="cleanList()">limpar</button>
+    </div>
+    </section>
+    <br><section>
+        <h2>Role seu d20!</h2>
+        <button data-modal-target="#modal" class="rolar" id="rolar" onclick="calcular()"><img src="d20.gif"></button>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Sua rolagem foi:</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <h1 class="dados" id="dados">18</h1>
+                <p class="result" id="result">seu ataque foi extremo!</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

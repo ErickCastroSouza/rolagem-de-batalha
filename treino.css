@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(128, 44, 44);
+}
+
+header {
+    color: white;
+    text-align: center;
+    font: normal 15pt Arial;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0.363);
+    color: black;
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+input#pericia {
+    border-radius: 10px;
+    margin-left: 155px;
+    margin-right: 155px;
+}
+
+input#confirmar {
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: green;
+}
+
+h2 {
+    text-align: center;
+}
+
+button#rolar {
+    width: 50px;
+    height: 50px;
+    margin-left: none;
+    margin-right: 450px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+button#limpar {
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: red;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+button#rolar:active {
+  background-color: none;
+  box-shadow: 0 5px none;
+  transform: translateY(4px)
+}
+
+h1#dados {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin-left: 110px;
+    margin-right: 200px;
+}
+
+p#result {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
